@@ -14,15 +14,17 @@ Exemple d'entrée:
   ]
 En sortie: [
   'Chicken contains 7 characters',
-  'Bacon contains 5 characters',
+  'Bacon contains 5 characters', 
   'Tofu contains 4 characters',
   'Mayonnaise contains 10 characters'
 ]
 
  */
-
 function getStringsLength(strings) {
+  let valeur = strings.map((x => x + ' contains ' + x.length + ' characters'))
+  return valeur;
 }
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1

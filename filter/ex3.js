@@ -24,7 +24,11 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  let arr = names.filter(courant => courant.endsWith('Stark'))
+  return arr
 }
+
+
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

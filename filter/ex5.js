@@ -39,7 +39,16 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+
+  let result = items.filter(function (courant) {
+    return courant.toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+  });
+   return (result)
 }
+
+
+
 
 // Ne pas modifier l'export
 module.exports = searchWordFilter;
